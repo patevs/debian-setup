@@ -1,15 +1,15 @@
 #!/bin/bash
 
-# ---------------------- #
-# scripts/debian/asdf.sh #
-# ---------------------- #
+# --------------- #
+# scripts/asdf.sh #
+# --------------- #
 
 # Bash script for installing asdf-vm CLI tool.
 
 # https://dev.to/megatux/asdf-version-manager-153a
-# asdf is "generic" version manager, that with same 
-# interface of commands & one setup you can handle a 
-# lot of languages & tools versions altogether and 
+# asdf is "generic" version manager, that with same
+# interface of commands & one setup you can handle a
+# lot of languages & tools versions altogether and
 # it is extendable via plugins.
 
 # Resources:
@@ -120,6 +120,4 @@ exec $SHELL
 
 printf "\n ${BACKGROUND_GREEN} asdf-vm install script complete! ${NC} \n"
 
-
 # EOF #
-
