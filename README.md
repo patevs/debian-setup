@@ -18,11 +18,13 @@
 
 ```md
 .
+├── scripts
 ├── .editorconfig
 ├── .gitignore
 ├── LICENSE
 ├── package.json
-└── README.md
+├── README.md
+└── setup.sh
 ```
 
 ---
