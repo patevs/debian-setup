@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# --------- #
-# debian.sh #
-# --------- #
+# -------- #
+# setup.sh #
+# -------- #
 
 # TODO: Ensure running as sudo
 # TODO: Verify system architecture
@@ -97,10 +97,10 @@ sudo apt install realvnc-vnc-server realvnc-vnc-viewer
 # VSCode
 # ------
 
-# sudo snap install code --classic
+sudo snap install code --classic
 
-wget https://packagecloud.io/headmelted/codebuilds/gpgkey -O - | sudo apt-key add -
-curl -L https://raw.githubusercontent.com/headmelted/codebuilds/master/docs/installers/apt.sh | sudo bash
+# wget https://packagecloud.io/headmelted/codebuilds/gpgkey -O - | sudo apt-key add -
+# curl -L https://raw.githubusercontent.com/headmelted/codebuilds/master/docs/installers/apt.sh | sudo bash
 # OR:
 # . <( wget -O - https://code.headmelted.com/installers/apt.sh )
 
