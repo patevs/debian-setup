@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# ----------------------- #
-# scripts/debian/pyenv.sh #
-# ----------------------- #
+# ---------------- #
+# scripts/pyenv.sh #
+# ---------------- #
 
 # Bash script for installing pyenv.
 # NOTE: This script must be run as sudo
@@ -67,7 +67,7 @@ printf "\n ${BACKGROUND_BLUE} Running Pyenv Install Steps: ${NC} \n"
 
 # curl https://pyenv.run | bash
 
-# Equivilent to: 
+# Equivilent to:
 # curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
 
 # Enable pyenv by adding the following to ~/.bashrc
