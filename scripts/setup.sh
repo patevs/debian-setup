@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# ----------------------- #
-# scripts/debian/setup.sh #
-# ----------------------- #
+# ---------------- #
+# scripts/setup.sh #
+# ---------------- #
 
-# Bash script setting up a fresh debian/ubuntu installation.
+# Bash script for setting up a fresh debian/ubuntu installation.
 # NOTE: This script must be run as sudo
 
 # TODO: Ensure we are running as sudo
@@ -119,7 +119,7 @@ printf "\n ${LIGHT_GREEN} NVM | NodeJS | NPM Install Complete! ${NC}\n"
 
 # curl https://pyenv.run | bash
 
-# Equivilent to: 
+# Equivilent to:
 # curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
 
 # Enable pyenv by adding the following to ~/.bashrc
