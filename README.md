@@ -1,6 +1,6 @@
-# Repo Template
+# Debian Setup
 
-> A Basic GitHub Repository Template
+> Debian/Ubuntu Setup Scripts
 
 ---
 
