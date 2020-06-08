@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# -------- #
-# setup.sh #
-# -------- #
+# --------------- #
+# setup-debian.sh #
+# --------------- #
 
 # TODO: Ensure running as sudo
 # TODO: Verify system architecture
