@@ -1,6 +1,6 @@
 # Debian Setup
 
-> Debian/Ubuntu Setup Scripts
+> Debian/Ubuntu/Raspberry Pi Setup Scripts
 
 ---
 
@@ -24,7 +24,8 @@
 ├── LICENSE
 ├── package.json
 ├── README.md
-└── setup.sh
+├── setup-debian.sh
+└── setup-rpi.sh
 ```
 
 ---
