@@ -104,6 +104,11 @@ sudo snap install code --classic
 # OR:
 # . <( wget -O - https://code.headmelted.com/installers/apt.sh )
 
+# Keyboarding Master
+# ------------------
+
+# https://bitbucket.org/conzar/keyboarding-master/downloads/kbmaster-0.4.3-linux-x64-installer.run
+
 # --------------------------------------------------------------------------------------------------- #
 
 # Go Lang
