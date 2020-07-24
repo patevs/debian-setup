@@ -315,9 +315,10 @@ sudo apt install ruby-full
 sudo gem update --system
 sudo gem update
 
-sudo gem install bundler
-sudo gem install rails
-sudo gem install neovim
+sudo gem install \
+  bundler \
+  rails \
+  neovim
 
 # rbenv
 # =====
