@@ -1,6 +1,6 @@
 # Debian Setup
 
-> Debian/Ubuntu/Raspberry Pi Setup Scripts
+> Debian/Ubuntu & RaspberryPi Setup Scripts.
 
 ---
 
