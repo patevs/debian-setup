@@ -240,7 +240,7 @@ exec "$SHELL"
 # Install Dependencies
 # --------------------
 
-sudo apt install --no-install-recommends \
+sudo apt install --no-install-recommends -y \
   make \
   build-essential \
   libssl-dev \
