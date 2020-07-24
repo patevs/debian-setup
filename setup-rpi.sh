@@ -309,6 +309,14 @@ sudo gem install \
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
+# Active cargo
+# ------------
+
+source $HOME/.cargo/env
+
+# Update Rustup
+# -------------
+
 rustup self update
 rustup update
 
