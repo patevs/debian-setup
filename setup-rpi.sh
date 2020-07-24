@@ -397,7 +397,9 @@ sudo gem install neovim
 # Install RVM
 # -----------
 
+# Install RVM with default ruby
 # curl -sSL https://get.rvm.io | bash -s stable
+
 # Install RVM with default Ruby and Rails
 # curl -sSL https://get.rvm.io | bash -s stable --rails
 
