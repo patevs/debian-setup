@@ -1,7 +1,7 @@
 {
   "name": "debian-setup",
   "version": "1.4.0",
-  "description": "Debian/Ubuntu Setup Scripts",
+  "description": "Debian/Ubuntu/RaspberryPi Setup Scripts",
   "author": "PatEvs",
   "license": "MIT",
   "repository": {
