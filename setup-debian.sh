@@ -192,250 +192,38 @@ sudo apt install openjdk-8-jdk
 
 # --------------------------------------------------------------------------------------------------- #
 
-# Node Version Manager (NVM)
-# ==========================
+# NodeJS Installs
+# ===============
 
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
-
-# Previous node version
-# previous-node=$(nvm current)
-
-# NodeJS LTS and NPM
-# ------------------
-
-nvm install --lts --latest-npm
-
-# nvm install --lts --latest-npm --reinstall-packages-from=$(nvm current)
-# nvm install --lts --latest-npm --reinstall-packages-from=12.17.0
-# nvm reinstall-packages previous-node
-
-# NPM Global Installs
-# -------------------
-
-npm install --global \
-  add-gitignore \
-  check-it-out \
-  diff-so-fancy \
-  gitmoji-cli \
-  david \
-  npm-check \
-  npm-check-updates \
-  ntl \
-  licensed \
-  neovim \
-  gtop \
-  wifi-password-cli \
-  corona-cli
+bash common/node.sh
 
 # --------------------------------------------------------------------------------------------------- #
 
-# Yarn
-# ====
+# Yarn Installs
+# =============
 
-curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-
-sudo apt update
-sudo apt install -y yarn
+bash common/yarn.sh
 
 # --------------------------------------------------------------------------------------------------- #
 
 # Perl
-# ----
+# ====
 
-sudo apt install perl
+# sudo apt install perl
 
 # --------------------------------------------------------------------------------------------------- #
 
-# Python Version Manager (pyenv)
-# ==============================
+# Python Installs
+# ===============
 
-# TODO: Update pyenv if already installed
-
-git clone https://github.com/pyenv/pyenv.git ~/.pyenv
-echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
-echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
-echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.bashrc
-
-# Restart Shell
-exec "$SHELL"
-
-# Install Dependencies
-# --------------------
-
-sudo apt install --no-install-recommends -y \
-  make \
-  build-essential \
-  libssl-dev \
-  zlib1g-dev \
-  libbz2-dev \
-  libreadline-dev \
-  libsqlite3-dev \
-  llvm \
-  libncurses5-dev \
-  xz-utils \
-  tk-dev \
-  libxml2-dev \
-  libxmlsec1-dev \
-  libffi-dev \
-  liblzma-dev
-
-# Install Python2
-# ---------------
-
-pyenv install 2.7.18
-
-# Install Python3
-# ---------------
-
-pyenv install 3.8.5
-
-# Set Global Python Versions
-# --------------------------
-
-pyenv global 3.8.5 2.7.18 system
-
-pyenv rehash
-
-# Python2 Installs
-# ================
-
-# sudo apt install python2
-# sudo apt install python-pip
-
-python2 -m pip install --upgrade \
-  pip \
-  setuptools \
-  wheel \
-  neovim \
-  virtualenv
-
-# Python3 Installs
-# ================
-
-# sudo apt install python3
-# sudo apt install python3-pip
-
-python3 -m pip install --upgrade \
-  pip \
-  setuptools \
-  wheel \
-  neovim \
-  thefuck
+bash common/python.sh
 
 # --------------------------------------------------------------------------------------------------- #
 
 # Ruby Installs
 # =============
 
-sudo apt install ruby-full
-
-# Ruby Gem Installs
-# -----------------
-
-sudo gem update --system
-sudo gem update
-
-sudo gem install \
-  bundler \
-  rails \
-  neovim
-
-# rbenv
-# =====
-
-# Install Dependencies
-# --------------------
-
-# sudo apt install -y \
-#   git \
-#   libssl-dev \
-#   libreadline-dev \
-#   zlib1g-dev \
-#   autoconf \
-#   bison \
-#   build-essential \
-#   libyaml-dev \
-#   libreadline-dev \
-#   libncurses5-dev \
-#   libffi-dev \
-#   libgdbm-dev
-
-# Install rbenv
-# -------------
-
-# curl -sL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-installer | bash -
-
-# Add `$HOME/.rbenv/bin` to user path
-
-# echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
-# echo 'eval "$(rbenv init -)"' >> ~/.bashrc
-# source ~/.bashrc
-
-# If using ZSH
-
-# echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc
-# echo 'eval "$(rbenv init -)"' >> ~/.zshrc
-# source ~/.zshrc
-
-# Install ruby
-# ------------
-
-# rbenv install 2.6.6
-# rbenv global 2.6.6
-# rbenv install 2.7.1
-# rbenv global 2.7.1
-
-# Ruby Version Manager (RVM)
-# ==========================
-
-# Install Dependencies
-# --------------------
-
-# sudo apt install -y \
-#   g++ \
-#   gcc \
-#   autoconf \
-#   automake \
-#   bison \
-#   libc6-dev \
-#   libffi-dev \
-#   libgdbm-dev \
-#   libncurses5-dev \
-#   libsqlite3-dev \
-#   libtool \
-#   libyaml-dev \
-#   make \
-#   pkg-config \
-#   sqlite3 \
-#   zlib1g-dev \
-#   libgmp-dev \
-#   libreadline-dev \
-#   libssl-dev
-
-# gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
-# OR:
-# gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
-
-# Install RVM
-# -----------
-
-# Install RVM with default ruby
-# curl -sSL https://get.rvm.io | bash -s stable
-
-# Install RVM with default Ruby and Rails
-# curl -sSL https://get.rvm.io | bash -s stable --rails
-
-# Activate RVM
-# ------------
-
-# source ~/.rvm/scripts/rvm
-
-# Install Ruby
-# ------------
-
-# rvm install 2.7.1
-# rvm use 2.7.1 --default
+bash common/ruby.sh
 
 # --------------------------------------------------------------------------------------------------- #
 
