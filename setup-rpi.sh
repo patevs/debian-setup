@@ -429,10 +429,12 @@ rustup update
 # Cargo Installs
 # ==============
 
-cargo install bat
-cargo install eva
+cargo install \
+  bat \
+  eva \
+  lsd \
+
 # cargo install git-delta
-cargo install lsd
 # cargo install tokei
 
 # --------------------------------------------------------------------------------------------------- #
