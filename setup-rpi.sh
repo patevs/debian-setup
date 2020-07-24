@@ -304,6 +304,8 @@ sudo gem install \
 # Rust Installs
 # =============
 
+bash common/rust.sh
+
 # Install Rustup
 # --------------
 

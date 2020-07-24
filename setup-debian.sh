@@ -442,32 +442,7 @@ sudo gem install \
 # Rust Installs
 # =============
 
-# Install Rustup
-# --------------
-
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-
-# Active cargo
-# ------------
-
-source $HOME/.cargo/env
-
-# Update Rustup
-# -------------
-
-rustup self update
-rustup update
-
-# Cargo Installs
-# --------------
-
-cargo install \
-  bat \
-  eva \
-  lsd \
-
-# cargo install git-delta
-# cargo install tokei
+bash common/rust.sh
 
 # --------------------------------------------------------------------------------------------------- #
 
