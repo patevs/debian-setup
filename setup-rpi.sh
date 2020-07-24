@@ -94,7 +94,13 @@ curl -fLo "Hack Regular Nerd Font Complete.otf" \
 # ============
 
 # sudo apt install firefox
-sudo apt install -y realvnc-vnc-server realvnc-vnc-viewer
+
+# VNC Server
+# ----------
+
+sudo apt install -y \
+  realvnc-vnc-server \
+  realvnc-vnc-viewer
 
 # VSCode
 # ------
@@ -304,13 +310,13 @@ python3 -m pip install --upgrade \
 
 # --------------------------------------------------------------------------------------------------- #
 
-# Ruby
-# ====
+# Ruby Installs
+# =============
 
 sudo apt install ruby-full
 
-# Ruby Gems
-# =========
+# Ruby Gem Installs
+# -----------------
 
 sudo gem update --system
 sudo gem update
@@ -418,8 +424,11 @@ sudo gem install \
 
 # --------------------------------------------------------------------------------------------------- #
 
-# Rustup
-# ======
+# Rust Installs
+# =============
+
+# Install Rustup
+# --------------
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
@@ -427,7 +436,7 @@ rustup self update
 rustup update
 
 # Cargo Installs
-# ==============
+# --------------
 
 cargo install \
   bat \
