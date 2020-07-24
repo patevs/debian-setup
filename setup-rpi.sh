@@ -92,7 +92,7 @@ curl -fLo "Hack Regular Nerd Font Complete.otf" \
 # Applications
 # ============
 
-# sudo apt install firefox
+# sudo apt install -y firefox
 
 # VNC Server
 # ----------
