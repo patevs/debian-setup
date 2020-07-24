@@ -282,12 +282,12 @@ pyenv rehash
 # sudo apt install python2
 # sudo apt install python-pip
 
-python2 -m pip install --upgrade pip
-python2 -m pip install --upgrade setuptools
-python2 -m pip install --upgrade wheel
-
-python2 -m pip install --upgrade neovim
-python2 -m pip install --upgrade virtualenv
+python2 -m pip install --upgrade \
+  pip \
+  setuptools \
+  wheel \
+  neovim \
+  virtualenv
 
 # Python3 Installs
 # ================
@@ -295,11 +295,12 @@ python2 -m pip install --upgrade virtualenv
 # sudo apt install python3
 # sudo apt install python3-pip
 
-python3 -m pip install --upgrade pip
-python3 -m pip install --upgrade setuptools
-python3 -m pip install --upgrade wheel
-
-python3 -m pip install --upgrade neovim
+python3 -m pip install --upgrade \
+  pip \
+  setuptools \
+  wheel \
+  neovim \
+  thefuck
 
 # --------------------------------------------------------------------------------------------------- #
 
