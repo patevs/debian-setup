@@ -63,7 +63,6 @@ sudo apt install snapd
 # Shell and Terminal
 # ------------------
 
-
 # sudo apt install gnome-terminal
 # sudo apt install stterm
 sudo apt install terminator
@@ -75,6 +74,20 @@ sudo apt install terminator
 
 # oh-my-zsh
 # sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# --------------------------------------------------------------------------------------------------- #
+
+# Fonts
+# =====
+
+mkdir -p ~/.local/share/fonts
+cd ~/.local/share/fonts
+
+# Hack NF
+# -------
+
+curl -fLo "Hack Regular Nerd Font Complete.otf" \
+  https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf
 
 # --------------------------------------------------------------------------------------------------- #
 
@@ -96,8 +109,48 @@ curl -L https://raw.githubusercontent.com/headmelted/codebuilds/master/docs/inst
 
 # --------------------------------------------------------------------------------------------------- #
 
+# Developer Tools
+# ===============
+
+sudo apt install -y \
+  bash-completion \
+  git \
+  hub \
+  jq \
+  neofetch \
+  neovim \
+  ripgrep
+
+# Bat
+# ---
+
+# curl -L https://github.com/sharkdp/bat/releases/download/v0.15.4/bat_0.15.4_armhf.deb -o bat_0.15.4_armhf.deb
+# sudo dpkg -i bat_0.15.4_armhf.deb
+# rm bat_0.15.4_armhf.deb
+
+# LSDeluxe (LSD)
+# --------------
+
+# sudo snap install lsd
+
+# TODO: Dynamically download latest version
+# curl -L https://github.com/Peltoche/lsd/releases/download/0.17.0/lsd_0.17.0_amd64.deb -o lsd_0.17.0_amd64.deb
+# sudo dpkg -i lsd_0.17.0_amd64.deb
+# rm lsd_0.17.0_amd64.deb
+
+# https://gist.github.com/steinwaywhw/a4cd19cda655b8249d908261a62687f8
+# curl -s https://api.github.com/repos/jgm/pandoc/releases/latest \
+# | grep "browser_download_url.*deb" \
+# | cut -d : -f 2,3 \
+# | tr -d \" \
+# | wget -qi -
+
+# curl -sL https://github.com/user-or-org/repo/archive/sha1-or-ref.tar.gz
+
+# --------------------------------------------------------------------------------------------------- #
+
 # Go Lang
-# -------
+# =======
 
 sudo snap install --classic go
 
@@ -113,22 +166,23 @@ go get -u github.com/xxxserxxx/gotop/cmd/gotop
 # --------------------------------------------------------------------------------------------------- #
 
 # Java 8
-# ------
+# ======
 
-sudo apt install openjdk-8-jdk
+# sudo apt install openjdk-8-jdk
 
 # --------------------------------------------------------------------------------------------------- #
 
-# NodeJS and NPM
-# --------------
+# Node Version Manager (NVM)
+# ==========================
 
-# Node Version Manager
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 
 # Previous node version
 # previous-node=$(nvm current)
 
 # NodeJS LTS and NPM
+# ------------------
+
 nvm install --lts --latest-npm
 
 # nvm install --lts --latest-npm --reinstall-packages-from=$(nvm current)
@@ -163,30 +217,26 @@ npm install --global corona-cli
 
 # --------------------------------------------------------------------------------------------------- #
 
+# Yarn
+# ====
+
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+
+sudo apt update
+sudo apt install yarn
+
+# --------------------------------------------------------------------------------------------------- #
+
 # Perl
-# ----
+# ====
 
 # sudo apt install perl
 
 # --------------------------------------------------------------------------------------------------- #
 
-# Python2 and PIP
-# ---------------
-
-# sudo apt install python2
-# sudo apt install python-pip
-
-# Python3 and PIP
-# ---------------
-
-# sudo apt install python3
-# sudo apt install python3-pip
-
-# pip3 install --upgrade pip
-# pip3 install --upgrade setuptools
-
-# Python Version Manager
-# ----------------------
+# Python Version Manager (pyenv)
+# ==============================
 
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
@@ -198,18 +248,33 @@ exec "$SHELL"
 
 # Install Python2 and Python3
 
-# Dependencies
+# Install Dependencies
+# --------------------
+
 sudo apt install --no-install-recommends make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev llvm libncurses5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
 
+# Install Python2
+# ---------------
+
 pyenv install 2.7.18
+
+# Install Python3
+# ---------------
+
 pyenv install 3.8.3
+
+# Set Global Python Versions
+# --------------------------
 
 pyenv global 3.8.3 2.7.18 system
 
 pyenv rehash
 
 # Python2 Installs
-# ----------------
+# ================
+
+# sudo apt install python2
+# sudo apt install python-pip
 
 python2 -m pip install --upgrade pip
 python2 -m pip install --upgrade setuptools
@@ -219,7 +284,10 @@ python2 -m pip install --upgrade neovim
 python2 -m pip install --upgrade virtualenv
 
 # Python3 Installs
-# ----------------
+# ================
+
+# sudo apt install python3
+# sudo apt install python3-pip
 
 python3 -m pip install --upgrade pip
 python3 -m pip install --upgrade setuptools
@@ -229,12 +297,14 @@ python3 -m pip install --upgrade neovim
 
 # --------------------------------------------------------------------------------------------------- #
 
-# Ruby and Ruby Gems
-# ------------------
+# Ruby
+# ====
 
 sudo apt install ruby-full
 
 # Ruby Gems
+# =========
+
 sudo gem update --system
 sudo gem update
 
@@ -243,6 +313,7 @@ sudo gem install rails
 sudo gem install neovim
 
 # Rbenv
+# =====
 
 # Dependencies
 # sudo apt install git libssl-dev libreadline-dev zlib1g-dev autoconf bison build-essential libyaml-dev libreadline-dev libncurses5-dev libffi-dev libgdbm-dev
@@ -264,6 +335,7 @@ sudo gem install neovim
 # rbenv global 2.7.1
 
 # Ruby Version Manager (RVM)
+# ==========================
 
 # Dependencies
 # sudo apt install g++, gcc, autoconf, automake, bison, libc6-dev, libffi-dev, libgdbm-dev, libncurses5-dev, libsqlite3-dev, libtool, libyaml-dev, make, pkg-config, sqlite3, zlib1g-dev, libgmp-dev, libreadline-dev, libssl-dev
@@ -286,7 +358,7 @@ sudo gem install neovim
 # --------------------------------------------------------------------------------------------------- #
 
 # Rustup
-# ------
+# ======
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
@@ -294,74 +366,13 @@ rustup self update
 rustup update
 
 # Cargo Installs
-# --------------
+# ==============
 
 cargo install bat
 cargo install eva
 # cargo install git-delta
 cargo install lsd
 # cargo install tokei
-
-# --------------------------------------------------------------------------------------------------- #
-
-# Developer Tools
-# ===============
-
-sudo apt install bash-completion
-# sudo apt install bat
-# sudo apt install docker.io
-sudo apt install git
-sudo apt install hub
-sudo apt install jq
-sudo apt install neofetch
-sudo apt install neovim
-sudo apt install ripgrep
-
-# Yarn
-# ----
-
-curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-
-sudo apt update
-sudo apt install yarn
-
-# Bat
-# ---
-
-# curl -L https://github.com/sharkdp/bat/releases/download/v0.15.4/bat_0.15.4_armhf.deb -o bat_0.15.4_armhf.deb
-# sudo dpkg -i bat_0.15.4_armhf.deb
-# rm bat_0.15.4_armhf.deb
-
-# LSDeluxe (LSD)
-# --------------
-
-# sudo snap install lsd
-
-# TODO: Dynamically download latest version
-# curl -L https://github.com/Peltoche/lsd/releases/download/0.17.0/lsd_0.17.0_amd64.deb -o lsd_0.17.0_amd64.deb
-# sudo dpkg -i lsd_0.17.0_amd64.deb
-# rm lsd_0.17.0_amd64.deb
-
-# https://gist.github.com/steinwaywhw/a4cd19cda655b8249d908261a62687f8
-# curl -s https://api.github.com/repos/jgm/pandoc/releases/latest \
-# | grep "browser_download_url.*deb" \
-# | cut -d : -f 2,3 \
-# | tr -d \" \
-# | wget -qi -
-
-# curl -sL https://github.com/user-or-org/repo/archive/sha1-or-ref.tar.gz
-
-# --------------------------------------------------------------------------------------------------- #
-
-# Fonts
-# =====
-
-mkdir -p ~/.local/share/fonts
-cd ~/.local/share/fonts
-
-# Hack NF
-curl -fLo "Hack Regular Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf
 
 # --------------------------------------------------------------------------------------------------- #
 
