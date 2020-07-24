@@ -229,6 +229,8 @@ sudo apt install -y yarn
 # Python Version Manager (pyenv)
 # ==============================
 
+# TODO: Update pyenv if already installed
+
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
 echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
@@ -265,12 +267,12 @@ pyenv install 2.7.18
 # Install Python3
 # ---------------
 
-pyenv install 3.8.3
+pyenv install 3.8.5
 
 # Set Global Python Versions
 # --------------------------
 
-pyenv global 3.8.3 2.7.18 system
+pyenv global 3.8.5 2.7.18 system
 
 pyenv rehash
 
