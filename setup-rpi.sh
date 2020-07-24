@@ -46,12 +46,11 @@ sudo apt upgrade -y
 # System Utilities
 # ================
 
-# sudo apt install software-properties-common
-
 # Snap
 # ----
 
-sudo apt install snapd
+sudo apt install -y snapd
+
 # sudo snap install hello-world
 # hello-world
 
@@ -95,7 +94,7 @@ curl -fLo "Hack Regular Nerd Font Complete.otf" \
 # ============
 
 # sudo apt install firefox
-sudo apt install realvnc-vnc-server realvnc-vnc-viewer
+sudo apt install -y realvnc-vnc-server realvnc-vnc-viewer
 
 # VSCode
 # ------
@@ -192,28 +191,20 @@ nvm install --lts --latest-npm
 # NPM Global Installs
 # -------------------
 
-# Git Integrations and Utilities
-npm install --global add-gitignore
-npm install --global check-it-out
-npm install --global diff-so-fancy
-
-# NodeJS and NPM Utility Modules
-npm install --global gitmoji-cli
-npm install --global david
-npm install --global npm-check
-npm install --global npm-check-updates
-npm install --global ntl
-
-# Development Utility Modules
-npm install --global licensed
-npm install --global neovim
-
-# System Utility Modules
-npm install --global gtop
-npm install --global wifi-password-cli
-
-# Miscellaneous Modules
-npm install --global corona-cli
+npm install --global \
+  add-gitignore \
+  check-it-out \
+  diff-so-fancy \
+  gitmoji-cli \
+  david \
+  npm-check \
+  npm-check-updates \
+  ntl \
+  licensed \
+  neovim \
+  gtop \
+  wifi-password-cli \
+  corona-cli
 
 # --------------------------------------------------------------------------------------------------- #
 
@@ -246,12 +237,25 @@ echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nf
 # Restart Shell
 exec "$SHELL"
 
-# Install Python2 and Python3
-
 # Install Dependencies
 # --------------------
 
-sudo apt install --no-install-recommends make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev llvm libncurses5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
+sudo apt install --no-install-recommends \
+  make \
+  build-essential \
+  libssl-dev \
+  zlib1g-dev \
+  libbz2-dev \
+  libreadline-dev \
+  libsqlite3-dev \
+  llvm \
+  libncurses5-dev \
+  xz-utils \
+  tk-dev \
+  libxml2-dev \
+  libxmlsec1-dev \
+  libffi-dev \
+  liblzma-dev
 
 # Install Python2
 # ---------------
