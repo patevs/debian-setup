@@ -286,7 +286,7 @@ python3 -m pip install --upgrade \
 # Ruby Installs
 # =============
 
-sudo apt install ruby-full
+sudo apt install -y ruby-full
 
 # Ruby Gem Installs
 # -----------------
