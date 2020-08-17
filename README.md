@@ -8,22 +8,20 @@
 
 ```md
 .
-├── common
+├── common              # Common scripts
 │   ├── node.sh
 │   ├── python.sh
 │   ├── ruby.sh
 │   └── yarn.sh
-├── scripts
-├── .commitlintrc.json
-├── .editorconfig
-├── .gitignore
-├── .huskyrc
-├── .np-config.json
-├── LICENSE
-├── package.json
-├── README.md
-├── setup-debian.sh
-└── setup-rpi.sh
+├── .commitlintrc.json  # Commitlint configuration
+├── .editorconfig       # Editor configuration
+├── .gitignore          # Git ignore rules
+├── .np-config.json     # NPM Publish (np) configuration
+├── LICENSE             # Project License
+├── package.json        # NPM package configuration
+└── README.md           # Project README
+├── setup-debian.sh     # Debian (x86) setup script
+└── setup-rpi.sh        # RPi (ARM) setup script
 ```
 
 ---
