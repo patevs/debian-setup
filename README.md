@@ -9,6 +9,10 @@
 ```md
 .
 ├── common
+│   ├── node.sh
+│   ├── python.sh
+│   ├── ruby.sh
+│   └── yarn.sh
 ├── scripts
 ├── .commitlintrc.json
 ├── .editorconfig
