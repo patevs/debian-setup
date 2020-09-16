@@ -1,6 +1,6 @@
 {
   "name": "debian-setup",
-  "version": "1.10.0",
+  "version": "1.11.0",
   "description": "Debian, Ubuntu, and Raspberry Pi system setup scripts",
   "author": "PatEvs",
   "license": "MIT",
@@ -18,7 +18,9 @@
     "np": "^6.5.0"
   },
   "commitlint": {
-    "extends": ["./node_modules/commitlint-config-gitmoji"]
+    "extends": [
+      "./node_modules/commitlint-config-gitmoji"
+    ]
   },
   "husky": {
     "hooks": {
