@@ -15,6 +15,7 @@
     "@commitlint/cli": "^11.0.0",
     "commitlint-config-gitmoji": "^1.0.1",
     "husky": "^4.3.0",
+    "lsd": "^0.0.1",
     "np": "^6.5.0"
   },
   "commitlint": {

@@ -769,6 +769,11 @@ del@^4.1.0:
     pify "^4.0.1"
     rimraf "^2.6.3"
 
+depthcharge@0.0.0:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/depthcharge/-/depthcharge-0.0.0.tgz#a2ba0c70be68ca8f6e3e56da7715b500f428cb8b"
+  integrity sha1-oroMcL5oyo9uPlbadxW1APQoy4s=
+
 dot-prop@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/dot-prop/-/dot-prop-3.0.0.tgz#1b708af094a49c9a0e7dbcad790aba539dac1177"
@@ -1567,6 +1572,13 @@ lru-cache@^6.0.0:
   integrity sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==
   dependencies:
     yallist "^4.0.0"
+
+lsd@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/lsd/-/lsd-0.0.1.tgz#2fe7d99574e8e46bbfebbcf807c8a95f056dc6d7"
+  integrity sha1-L+fZlXTo5Gu/67z4B8ipXwVtxtc=
+  dependencies:
+    depthcharge "0.0.0"
 
 make-dir@^3.0.0:
   version "3.1.0"
