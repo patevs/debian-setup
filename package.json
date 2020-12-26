@@ -1,6 +1,6 @@
 {
   "name": "debian-setup",
-  "version": "1.12.1",
+  "version": "1.13.0",
   "description": "Debian, Ubuntu, and Raspberry Pi system setup scripts",
   "author": "PatEvs",
   "license": "MIT",
