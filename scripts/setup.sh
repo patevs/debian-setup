@@ -1,8 +1,7 @@
 #!/bin/bash
 
-# ---------------- #
-# scripts/setup.sh #
-# ---------------- #
+# scripts/setup.sh
+# ----------------
 
 # Bash script for setting up a fresh debian/ubuntu installation.
 # NOTE: This script must be run as sudo

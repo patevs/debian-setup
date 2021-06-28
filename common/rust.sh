@@ -1,8 +1,7 @@
 #!/bin/bash
 
-# -------------- #
-# common/rust.sh #
-# -------------- #
+# common/rust.sh
+# --------------
 
 # Bash script used to install the rustup toolchain.
 # Installs rustup, rust, and cargo, along with some useful cargo packages.

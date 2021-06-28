@@ -1,8 +1,7 @@
 #!/bin/bash
 
-# ---------------- #
-# common/python.sh #
-# ---------------- #
+# common/python.sh
+# ----------------
 
 # Bash script used to install Python version manager along with both
 # Python2 and Python3, and come useful pip packages.

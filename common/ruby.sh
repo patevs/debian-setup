@@ -1,8 +1,7 @@
 #!/bin/bash
 
-# -------------- #
-# common/ruby.sh #
-# -------------- #
+# common/ruby.sh
+# --------------
 
 # Bash script used to install the Ruby programming language.
 # Installs Ruby, updates Ruby Gems, and installs some useful Gems.

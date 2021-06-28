@@ -1,8 +1,7 @@
 #!/bin/bash
 
-# -------------- #
-# common/node.sh #
-# -------------- #
+# common/yarn.sh
+# --------------
 
 # Bash script used to install the yarn package manager.
 

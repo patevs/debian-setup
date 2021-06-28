@@ -1,8 +1,7 @@
 #!/bin/bash
 
-# --------------- #
-# setup-debian.sh #
-# --------------- #
+# setup-debian.sh
+# ---------------
 
 # TODO: Ensure running as sudo
 

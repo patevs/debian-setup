@@ -1,8 +1,7 @@
 #!/bin/bash
 
-# ------------ #
-# setup-rpi.sh #
-# ------------ #
+# setup-rpi.sh
+# ------------
 
 # TODO: Ensure running as sudo
 

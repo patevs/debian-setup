@@ -1,8 +1,7 @@
 #!/bin/bash
 
-# --------------- #
-# scripts/asdf.sh #
-# --------------- #
+# scripts/asdf.sh
+# ---------------
 
 # Bash script for installing asdf-vm CLI tool.
 

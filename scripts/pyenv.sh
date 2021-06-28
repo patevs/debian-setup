@@ -1,10 +1,9 @@
 #!/bin/bash
 
-# ---------------- #
-# scripts/pyenv.sh #
-# ---------------- #
+# scripts/pyenv.sh
+# ----------------
 
-# Bash script for installing pyenv.
+# Bash script for installing pyenv
 # NOTE: This script must be run as sudo
 
 # TODO: Ensure we are running as sudo

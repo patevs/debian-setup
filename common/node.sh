@@ -1,8 +1,7 @@
 #!/bin/bash
 
-# -------------- #
-# common/node.sh #
-# -------------- #
+# common/node.sh
+# --------------
 
 # Bash script used to install Node version manager along with both
 # NodeJS LTS and latest npm, and come useful npm global modules.
