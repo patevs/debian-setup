@@ -8,6 +8,7 @@
 
 ```md
 .
+├── .husky              # Husky configuration
 ├── common              # Common scripts
 │   ├── node.sh
 │   ├── python.sh
