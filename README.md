@@ -14,6 +14,7 @@
 │   ├── python.sh
 │   ├── ruby.sh
 │   └── yarn.sh
+├── .commitlintrc       # Commitlint configuration
 ├── .editorconfig       # Editor configuration
 ├── .gitignore          # Git ignore rules
 ├── .np-config.json     # NPM Publish (np) configuration
